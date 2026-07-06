@@ -6,5 +6,5 @@
 
 echo $DATE
 source util/setchplenv.bash
-CHPL_TEST_TIMEOUT=600 start_test -performance test/studies/shootout --numtrials=10
+CHPL_TARGET_CPU=riscv64 CHPL_TEST_TIMEOUT=600 start_test -performance test/studies/shootout --numtrials=10
 echo $DATE
