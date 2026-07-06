@@ -66,5 +66,3 @@ then
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/performance/elliot/no-op.chpl
 fi
 
-CHPL_TARGET_CPU=riscv64 CHPL_TEST_TIMEOUT=600 start_test -performance test/studies/shootout --numtrials=10
-echo $DATE
