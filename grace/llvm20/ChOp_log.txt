@@ -1,0 +1,28 @@
+/bin/sh: line 1: rocm_agent_enumerator: command not found
+
+ ### creating directories ### 
+
+mkdir -p ./libs
+mkdir -p ./bin
+
+ ### Building Chapel Queens single-locale CPU... ### 
+
+chpl  -s avoidMirrored=true -M ./modules --fast --no-bounds-checks queens_CPU_single_node.chpl -o  ./bin/queens_mcore.out
+modules/queens_tree_exploration.chpl:10: In function 'queens_subtree_explorer':
+modules/queens_tree_exploration.chpl:26: error: Cannot assign to int(8) from uint(8)
+make: *** [Makefile:41: queens_singlelocale_cpu] Error 1
+Setting CHPL_HOME to /home/idhenri/chapel_arm
+Updating PATH to include /home/idhenri/chapel_arm/bin/linux64-aarch64
+                     and /home/idhenri/chapel_arm/util
+Updating MANPATH to include /home/idhenri/chapel_arm/man
+********** No SMT
+../ChOp_build_and_bench_arm.sh: line 9: ./bin/queens_mcore.out: No such file or directory
+../ChOp_build_and_bench_arm.sh: line 9: ./bin/queens_mcore.out: No such file or directory
+../ChOp_build_and_bench_arm.sh: line 9: ./bin/queens_mcore.out: No such file or directory
+../ChOp_build_and_bench_arm.sh: line 9: ./bin/queens_mcore.out: No such file or directory
+../ChOp_build_and_bench_arm.sh: line 9: ./bin/queens_mcore.out: No such file or directory
+../ChOp_build_and_bench_arm.sh: line 9: ./bin/queens_mcore.out: No such file or directory
+../ChOp_build_and_bench_arm.sh: line 9: ./bin/queens_mcore.out: No such file or directory
+../ChOp_build_and_bench_arm.sh: line 9: ./bin/queens_mcore.out: No such file or directory
+../ChOp_build_and_bench_arm.sh: line 9: ./bin/queens_mcore.out: No such file or directory
+../ChOp_build_and_bench_arm.sh: line 9: ./bin/queens_mcore.out: No such file or directory
