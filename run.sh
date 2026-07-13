@@ -18,8 +18,9 @@ export CHPL_TEST_PERF_DIR="$CHPL_HOME/test/perfdat/clbg_comparison"
 export CHPL_TEST_TIMEOUT=600
 
 start_test --performance --numtrials 10 test/studies/shootout/submitted
-start_test --performance --numtrials 10 test/studies/shootout/chameneos-redux
-start_test --performance --numtrials 10 test/studies/shootout/thread-ring
+start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/chameneosredux.chpl
+start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/chameneosredux-fast.chpl
+start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/threadring.chpl
 start_test --performance --numtrials 10 test/performance/elliot/no-op.chpl
 
 if [ ${MACHINE_TYPE} == 'x86_64' ];
@@ -35,16 +36,18 @@ then
   export CHPL_TEST_PERF_DIR="$CHPL_HOME/test/perfdat/clbg_comparison_smt"
   export CHPL_RT_NUM_THREADS_PER_LOCALE=MAX_LOGICAL
   start_test --performance --numtrials 10 test/studies/shootout/submitted
-  start_test --performance --numtrials 10 test/studies/shootout/chameneos-redux
-  start_test --performance --numtrials 10 test/studies/shootout/thread-ring
+  start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/chameneosredux.chpl
+  start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/chameneosredux-fast.chpl
+  start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/threadring.chpl
   start_test --performance --numtrials 10 test/performance/elliot/no-op.chpl
 
   # no hyperthreads, single socket
   export CHPL_TEST_PERF_DIR="$CHPL_HOME/test/perfdat/clbg_comparison_single_socket"
   export CHPL_RT_NUM_THREADS_PER_LOCALE=$NUM_CORES_PER_SOCKET
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/submitted
-  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/chameneos-redux
-  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/thread-ring
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux.chpl
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux-fast.chpl
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/threadring.chpl
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/performance/elliot/no-op.chpl
 
   # hyperthreads on single socket
@@ -52,8 +55,9 @@ then
   # NUM_CORES in this case is the same as the number of hyperthreads per socket.
   export CHPL_RT_NUM_THREADS_PER_LOCALE=$NUM_CORES
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/submitted
-  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/chameneos-redux
-  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/thread-ring
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux.chpl
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux-fast.chpl
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/threadring.chpl
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/performance/elliot/no-op.chpl
 fi
 
@@ -66,8 +70,9 @@ then
   export CHPL_TEST_PERF_DIR="$CHPL_HOME/test/perfdat/clbg_comparison_single_socket"
   export CHPL_RT_NUM_THREADS_PER_LOCALE=$NUM_CORES_PER_SOCKET
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/submitted
-  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/chameneos-redux
-  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/thread-ring
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux.chpl
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux-fast.chpl
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/threadring.chpl
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/performance/elliot/no-op.chpl
 fi
 
