@@ -20,7 +20,7 @@ export CHPL_TEST_TIMEOUT=600
 start_test --performance --numtrials 10 test/studies/shootout/submitted
 start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/chameneosredux.chpl
 start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/chameneosredux-fast.chpl
-start_test --performance --numtrials 10 test/studies/shootout/thread-ring
+start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/threadring.chpl
 start_test --performance --numtrials 10 test/performance/elliot/no-op.chpl
 
 if [ ${MACHINE_TYPE} == 'x86_64' ];
@@ -38,7 +38,7 @@ then
   start_test --performance --numtrials 10 test/studies/shootout/submitted
   start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/chameneosredux.chpl
   start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/chameneosredux-fast.chpl
-  start_test --performance --numtrials 10 test/studies/shootout/thread-ring
+  start_test --performance --numtrials 10 test/release/examples/benchmarks/shootout/threadring.chpl
   start_test --performance --numtrials 10 test/performance/elliot/no-op.chpl
 
   # no hyperthreads, single socket
@@ -47,7 +47,7 @@ then
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/submitted
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux.chpl
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux-fast.chpl
-  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/thread-ring
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/threadring.chpl
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/performance/elliot/no-op.chpl
 
   # hyperthreads on single socket
@@ -57,7 +57,7 @@ then
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/submitted
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux.chpl
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux-fast.chpl
-  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/thread-ring
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/threadring.chpl
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/performance/elliot/no-op.chpl
 fi
 
@@ -72,7 +72,7 @@ then
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/submitted
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux.chpl
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/chameneosredux-fast.chpl
-  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/studies/shootout/thread-ring
+  taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/release/examples/benchmarks/shootout/threadring.chpl
   taskset -c $SOCKET_TASKSET_RANGE start_test --performance --numtrials 10 --execopts "-nl 1x1s" test/performance/elliot/no-op.chpl
 fi
 
