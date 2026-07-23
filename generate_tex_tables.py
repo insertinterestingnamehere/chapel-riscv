@@ -118,10 +118,29 @@ def aggregate_runs(full_fname, method = 'mean', na_default = 'n/a'):
     try:
         with open(full_fname) as f:
             vals = [float(line.split()[1]) for line in f.readlines()[1:]]
+            if len(vals) < 10:
+                return na_default
     except FileNotFoundError:
         return na_default
     agg = aggregate(vals)
-    return "{:.2f}".format(agg)
+    return '{:.2f}'.format(agg)
+
+def aggregate_chop_runs(full_fname, method = 'mean', na_default = 'n/a'):
+    if method == 'mean':
+        aggregate = statistics.mean
+    elif method == 'median':
+        aggregate = statistics.median
+    else:
+        raise ValueError('Aggregation method not recognized')
+    try:
+        with open(full_fname) as f:
+            vals = [float(line.split()[-1]) for line in f.readlines() if line.startswith('Elapsed time (s): ')]
+            if len(vals) < 10:
+                return na_default
+    except FileNotFoundError:
+        return na_default
+    agg = aggregate(vals)
+    return '{:.2f}'.format(agg)
 
 table_template = '''\\begin{{table*}}[t]
 \\begin{{center}}
@@ -153,7 +172,7 @@ def generate_table_for_group(group, arches = available_arches, llvmver = 20):
     table_body = "\n".join(rows)
     return table_template.format(table_format, table_header, table_body)
 
-smtnuma_table_template = '''\\addtolength{\\tabcolsep}{-0.4em}
+smtnuma_table_template = '''\\addtolength{{\\tabcolsep}}{{-0.4em}}
 \\begin{{table*}}[t]
 \\begin{{center}}
 \\begin{{tabular}}{{{}}}
@@ -166,7 +185,7 @@ smtnuma_table_template = '''\\addtolength{\\tabcolsep}{-0.4em}
 \\end{{tabular}}
 \\end{{center}}
 \\end{{table*}}
-\\addtolength{\\tabcolsep}{0.4em}'''
+\\addtolength{{\\tabcolsep}}{{0.4em}}'''
 
 # Just do all the arches instead of allowing the caller to specify a subset.
 def generate_smt_table(llvmver = 20):
@@ -215,6 +234,15 @@ def generate_smt_table(llvmver = 20):
     data_lines = '\n'.join(entry_lines)
     return smtnuma_table_template.format(table_format, arch_header, config_header, data_lines)
 
+def generate_chop_table(arches = available_arches, llvmver = 20):
+    table_format = '|c|{}|'.format(' '.join(['c' for a in arches]))
+    table_header = "Name & {} \\\\".format(" & ".join(arch_names[arch] for arch in arches))
+    entries = []
+    for arch in arches:
+        entries.append(aggregate_chop_runs("{}/llvm{}/ChOp_log.txt".format(arch, llvmver)))
+    table_body = "ChOp & {} \\\\".format(' & '.join(entries))
+    return table_template.format(table_format, table_header, table_body)
+
 if __name__ == '__main__':
     for group in benchmark_groups:
         print(generate_table_for_group(group))
@@ -222,3 +250,4 @@ if __name__ == '__main__':
     for llvmver in [20, 21, 22]:
         print(generate_smt_table(llvmver))
         print()
+    print(generate_chop_table())
