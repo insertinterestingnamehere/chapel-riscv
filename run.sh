@@ -9,11 +9,6 @@ source util/setchplenv.bash
 
 export MACHINE_TYPE="$(uname -m)"
 
-if [ ${MACHINE_TYPE} == 'riscv64' ];
-then
-  export CHPL_TARGET_CPU=riscv64
-fi
-
 export CHPL_TEST_PERF_DIR="$CHPL_HOME/test/perfdat/clbg_comparison"
 export CHPL_TEST_TIMEOUT=600
 
