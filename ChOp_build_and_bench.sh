@@ -6,11 +6,6 @@ exec >ChOp_log.txt 2>&1
 
 export MACHINE_TYPE="$(uname -m)"
 
-if [ ${MACHINE_TYPE} == 'riscv64' ];
-then
-  export CHPL_TARGET_CPU=riscv64
-fi
-
 make queens_singlelocale_cpu
 
 echo "********** No SMT"
