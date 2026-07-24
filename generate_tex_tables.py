@@ -154,7 +154,7 @@ table_template = '''\\begin{{table*}}[t]
 \\end{{center}}
 \\end{{table*}}'''
 
-def generate_table_for_group(group, arches = available_arches, llvmver = 20):
+def generate_table_for_group(group, arches = available_arches, llvmver = 21):
     benchmarks = benchmark_groups[group]
     datfiles = [fname for bench in benchmark_groups[group]
                       for fname in benchmark_filenames[bench]]
@@ -188,7 +188,7 @@ smtnuma_table_template = '''\\addtolength{{\\tabcolsep}}{{-0.4em}}
 \\addtolength{{\\tabcolsep}}{{0.4em}}'''
 
 # Just do all the arches instead of allowing the caller to specify a subset.
-def generate_smt_table(llvmver = 20):
+def generate_smt_table(llvmver = 21):
     table_format = '|c|{}|'.format('|'.join('c c c c' if arch in numa_and_smt_arches else 'c c' for arch in numa_or_smt_arches))
     arch_header_entries = []
     arch_header_template = '\\multicolumn{{{}}}{{|c|}}{{{}}}'
@@ -234,7 +234,7 @@ def generate_smt_table(llvmver = 20):
     data_lines = '\n'.join(entry_lines)
     return smtnuma_table_template.format(table_format, arch_header, config_header, data_lines)
 
-def generate_chop_table(arches = available_arches, llvmver = 20):
+def generate_chop_table(arches = available_arches, llvmver = 21):
     table_format = '|c|{}|'.format(' '.join(['c' for a in arches]))
     table_header = "Name & {} \\\\".format(" & ".join(arch_names[arch] for arch in arches))
     entries = []
@@ -247,7 +247,7 @@ if __name__ == '__main__':
     for group in benchmark_groups:
         print(generate_table_for_group(group))
         print()
-    for llvmver in [20, 21, 22]:
+    for llvmver in [21, 22]:
         print(generate_smt_table(llvmver))
         print()
     print(generate_chop_table())
