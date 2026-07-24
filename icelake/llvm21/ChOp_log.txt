@@ -10,7 +10,7 @@ mkdir -p ./bin
 chpl  -s avoidMirrored=true -M ./modules --fast --no-bounds-checks queens_CPU_single_node.chpl -o  ./bin/queens_mcore.out
 
  ### Queens-Single Locale -- Compilation done ### 
-#### Number of compilations:  1161 ####
+#### Number of compilations:  1157 ####
 Setting CHPL_HOME to /home/idhenri/chapel
 Updating PATH to include /home/idhenri/chapel/bin/linux64-x86_64
                      and /home/idhenri/chapel/util
@@ -46,9 +46,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 34.869
-	Performance: 6552746004.806 (nodes/s)
-	Performance: 71239490.584 (solutions/s)
+Elapsed time (s): 44.870
+	Performance: 5092122348.316 (nodes/s)
+	Performance: 55360027.967 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -80,9 +80,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 34.593
-	Performance: 6605039704.165 (nodes/s)
-	Performance: 71808012.010 (solutions/s)
+Elapsed time (s): 48.625
+	Performance: 4698893067.001 (nodes/s)
+	Performance: 51084957.078 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -114,9 +114,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 34.489
-	Performance: 6624810734.978 (nodes/s)
-	Performance: 72022956.731 (solutions/s)
+Elapsed time (s): 48.994
+	Performance: 4663531499.840 (nodes/s)
+	Performance: 50700516.719 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -148,9 +148,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 38.393
-	Performance: 5951168276.278 (nodes/s)
-	Performance: 64699317.823 (solutions/s)
+Elapsed time (s): 49.084
+	Performance: 4655017786.575 (nodes/s)
+	Performance: 50607958.180 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -182,9 +182,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 45.975
-	Performance: 4969820555.626 (nodes/s)
-	Performance: 54030399.533 (solutions/s)
+Elapsed time (s): 50.098
+	Performance: 4560767384.132 (nodes/s)
+	Performance: 49583296.053 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -216,9 +216,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 47.846
-	Performance: 4775431754.363 (nodes/s)
-	Performance: 51917062.747 (solutions/s)
+Elapsed time (s): 50.276
+	Performance: 4544586681.253 (nodes/s)
+	Performance: 49407384.301 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -250,9 +250,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 48.484
-	Performance: 4712595375.140 (nodes/s)
-	Performance: 51233924.466 (solutions/s)
+Elapsed time (s): 50.119
+	Performance: 4558887704.376 (nodes/s)
+	Performance: 49562860.738 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -284,9 +284,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 49.079
-	Performance: 4655469165.551 (nodes/s)
-	Performance: 50612865.437 (solutions/s)
+Elapsed time (s): 50.201
+	Performance: 4551384181.727 (nodes/s)
+	Performance: 49481284.689 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -318,9 +318,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 49.245
-	Performance: 4639759460.043 (nodes/s)
-	Performance: 50442074.227 (solutions/s)
+Elapsed time (s): 50.275
+	Performance: 4544711063.937 (nodes/s)
+	Performance: 49408736.552 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -352,9 +352,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 49.106
-	Performance: 4652862353.046 (nodes/s)
-	Performance: 50584524.953 (solutions/s)
+Elapsed time (s): 49.730
+	Performance: 4594535843.712 (nodes/s)
+	Performance: 49950416.625 (solutions/s)
 
 ********** SMT
 
@@ -387,9 +387,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 37.359
-	Performance: 6115926381.265 (nodes/s)
-	Performance: 66490518.560 (solutions/s)
+Elapsed time (s): 37.423
+	Performance: 6105571513.371 (nodes/s)
+	Performance: 66377943.540 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -421,9 +421,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 37.885
-	Performance: 6030998582.429 (nodes/s)
-	Performance: 65567208.985 (solutions/s)
+Elapsed time (s): 37.989
+	Performance: 6014481521.850 (nodes/s)
+	Performance: 65387640.453 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -455,9 +455,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 38.094
-	Performance: 5998003668.933 (nodes/s)
-	Performance: 65208498.175 (solutions/s)
+Elapsed time (s): 37.631
+	Performance: 6071711736.595 (nodes/s)
+	Performance: 66009830.195 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -489,9 +489,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 38.105
-	Performance: 5996210014.751 (nodes/s)
-	Performance: 65188998.104 (solutions/s)
+Elapsed time (s): 37.849
+	Performance: 6036788669.445 (nodes/s)
+	Performance: 65630157.076 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -523,9 +523,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 38.154
-	Performance: 5988465641.196 (nodes/s)
-	Performance: 65104803.596 (solutions/s)
+Elapsed time (s): 37.919
+	Performance: 6025702486.014 (nodes/s)
+	Performance: 65509631.412 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -557,9 +557,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 38.176
-	Performance: 5985091779.878 (nodes/s)
-	Performance: 65068123.987 (solutions/s)
+Elapsed time (s): 37.754
+	Performance: 6051982707.549 (nodes/s)
+	Performance: 65795342.104 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -591,9 +591,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 38.209
-	Performance: 5979843571.349 (nodes/s)
-	Performance: 65011067.037 (solutions/s)
+Elapsed time (s): 37.472
+	Performance: 6097576922.638 (nodes/s)
+	Performance: 66291028.745 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -625,9 +625,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 38.221
-	Performance: 5978069832.099 (nodes/s)
-	Performance: 64991783.475 (solutions/s)
+Elapsed time (s): 38.007
+	Performance: 6011698427.258 (nodes/s)
+	Performance: 65357383.483 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -659,9 +659,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 37.841
-	Performance: 6038077361.992 (nodes/s)
-	Performance: 65644167.355 (solutions/s)
+Elapsed time (s): 36.730
+	Performance: 6220713162.626 (nodes/s)
+	Performance: 67629729.040 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -693,9 +693,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 38.022
-	Performance: 6009255631.417 (nodes/s)
-	Performance: 65330826.139 (solutions/s)
+Elapsed time (s): 36.786
+	Performance: 6211154739.850 (nodes/s)
+	Performance: 67525812.733 (solutions/s)
 
 ********** Single Socket, no SMT
 
@@ -728,281 +728,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 71.101
-	Performance: 3213535862.831 (nodes/s)
-	Performance: 34936598.744 (solutions/s)
-
-
---- N-QUEENS - Bitset-based data structure --- 
-	 Size: 19
---- N-Queens mcore search --- 
-
-
-N-Queens for size: 19
-
-CHPL Task layer: qthreads
-	Num created tasks: 32
-	Max num tasks: 128
-	Scheduler: dynamic
-	Local Chunk size: 1
-
-Initial depth: 5
-Number of subproblems found (pool size): 232174
-
-
-### Multicore N-Queens - dynamic ###
-	Problem size (N): 19
-	Cutoff depth: 5
-	Initial number of prefixes: 232174
-
-	Initial tree size: 258274
-	Parallel tree size: 228485522213
-	Final tree size: 228485780487
-
-	Number of solutions found: 4968057848
-
-
-Elapsed time (s): 71.080
-	Performance: 3214487807.329 (nodes/s)
-	Performance: 34946947.999 (solutions/s)
-
-
---- N-QUEENS - Bitset-based data structure --- 
-	 Size: 19
---- N-Queens mcore search --- 
-
-
-N-Queens for size: 19
-
-CHPL Task layer: qthreads
-	Num created tasks: 32
-	Max num tasks: 128
-	Scheduler: dynamic
-	Local Chunk size: 1
-
-Initial depth: 5
-Number of subproblems found (pool size): 232174
-
-
-### Multicore N-Queens - dynamic ###
-	Problem size (N): 19
-	Cutoff depth: 5
-	Initial number of prefixes: 232174
-
-	Initial tree size: 258274
-	Parallel tree size: 228485522213
-	Final tree size: 228485780487
-
-	Number of solutions found: 4968057848
-
-
-Elapsed time (s): 71.031
-	Performance: 3216706330.167 (nodes/s)
-	Performance: 34971067.115 (solutions/s)
-
-
---- N-QUEENS - Bitset-based data structure --- 
-	 Size: 19
---- N-Queens mcore search --- 
-
-
-N-Queens for size: 19
-
-CHPL Task layer: qthreads
-	Num created tasks: 32
-	Max num tasks: 128
-	Scheduler: dynamic
-	Local Chunk size: 1
-
-Initial depth: 5
-Number of subproblems found (pool size): 232174
-
-
-### Multicore N-Queens - dynamic ###
-	Problem size (N): 19
-	Cutoff depth: 5
-	Initial number of prefixes: 232174
-
-	Initial tree size: 258274
-	Parallel tree size: 228485522213
-	Final tree size: 228485780487
-
-	Number of solutions found: 4968057848
-
-
-Elapsed time (s): 71.057
-	Performance: 3215516338.331 (nodes/s)
-	Performance: 34958129.880 (solutions/s)
-
-
---- N-QUEENS - Bitset-based data structure --- 
-	 Size: 19
---- N-Queens mcore search --- 
-
-
-N-Queens for size: 19
-
-CHPL Task layer: qthreads
-	Num created tasks: 32
-	Max num tasks: 128
-	Scheduler: dynamic
-	Local Chunk size: 1
-
-Initial depth: 5
-Number of subproblems found (pool size): 232174
-
-
-### Multicore N-Queens - dynamic ###
-	Problem size (N): 19
-	Cutoff depth: 5
-	Initial number of prefixes: 232174
-
-	Initial tree size: 258274
-	Parallel tree size: 228485522213
-	Final tree size: 228485780487
-
-	Number of solutions found: 4968057848
-
-
-Elapsed time (s): 71.106
-	Performance: 3213313781.392 (nodes/s)
-	Performance: 34934184.341 (solutions/s)
-
-
---- N-QUEENS - Bitset-based data structure --- 
-	 Size: 19
---- N-Queens mcore search --- 
-
-
-N-Queens for size: 19
-
-CHPL Task layer: qthreads
-	Num created tasks: 32
-	Max num tasks: 128
-	Scheduler: dynamic
-	Local Chunk size: 1
-
-Initial depth: 5
-Number of subproblems found (pool size): 232174
-
-
-### Multicore N-Queens - dynamic ###
-	Problem size (N): 19
-	Cutoff depth: 5
-	Initial number of prefixes: 232174
-
-	Initial tree size: 258274
-	Parallel tree size: 228485522213
-	Final tree size: 228485780487
-
-	Number of solutions found: 4968057848
-
-
-Elapsed time (s): 71.040
-	Performance: 3216317959.320 (nodes/s)
-	Performance: 34966844.863 (solutions/s)
-
-
---- N-QUEENS - Bitset-based data structure --- 
-	 Size: 19
---- N-Queens mcore search --- 
-
-
-N-Queens for size: 19
-
-CHPL Task layer: qthreads
-	Num created tasks: 32
-	Max num tasks: 128
-	Scheduler: dynamic
-	Local Chunk size: 1
-
-Initial depth: 5
-Number of subproblems found (pool size): 232174
-
-
-### Multicore N-Queens - dynamic ###
-	Problem size (N): 19
-	Cutoff depth: 5
-	Initial number of prefixes: 232174
-
-	Initial tree size: 258274
-	Parallel tree size: 228485522213
-	Final tree size: 228485780487
-
-	Number of solutions found: 4968057848
-
-
-Elapsed time (s): 71.031
-	Performance: 3216689393.304 (nodes/s)
-	Performance: 34970882.982 (solutions/s)
-
-
---- N-QUEENS - Bitset-based data structure --- 
-	 Size: 19
---- N-Queens mcore search --- 
-
-
-N-Queens for size: 19
-
-CHPL Task layer: qthreads
-	Num created tasks: 32
-	Max num tasks: 128
-	Scheduler: dynamic
-	Local Chunk size: 1
-
-Initial depth: 5
-Number of subproblems found (pool size): 232174
-
-
-### Multicore N-Queens - dynamic ###
-	Problem size (N): 19
-	Cutoff depth: 5
-	Initial number of prefixes: 232174
-
-	Initial tree size: 258274
-	Parallel tree size: 228485522213
-	Final tree size: 228485780487
-
-	Number of solutions found: 4968057848
-
-
-Elapsed time (s): 71.012
-	Performance: 3217557886.441 (nodes/s)
-	Performance: 34980324.979 (solutions/s)
-
-
---- N-QUEENS - Bitset-based data structure --- 
-	 Size: 19
---- N-Queens mcore search --- 
-
-
-N-Queens for size: 19
-
-CHPL Task layer: qthreads
-	Num created tasks: 32
-	Max num tasks: 128
-	Scheduler: dynamic
-	Local Chunk size: 1
-
-Initial depth: 5
-Number of subproblems found (pool size): 232174
-
-
-### Multicore N-Queens - dynamic ###
-	Problem size (N): 19
-	Cutoff depth: 5
-	Initial number of prefixes: 232174
-
-	Initial tree size: 258274
-	Parallel tree size: 228485522213
-	Final tree size: 228485780487
-
-	Number of solutions found: 4968057848
-
-
 Elapsed time (s): 71.136
-	Performance: 3211941751.389 (nodes/s)
-	Performance: 34919268.042 (solutions/s)
+	Performance: 3211941615.933 (nodes/s)
+	Performance: 34919266.570 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -1034,9 +762,281 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 71.138
-	Performance: 3211853843.023 (nodes/s)
-	Performance: 34918312.329 (solutions/s)
+Elapsed time (s): 71.379
+	Performance: 3201013781.243 (nodes/s)
+	Performance: 34800462.426 (solutions/s)
+
+
+--- N-QUEENS - Bitset-based data structure --- 
+	 Size: 19
+--- N-Queens mcore search --- 
+
+
+N-Queens for size: 19
+
+CHPL Task layer: qthreads
+	Num created tasks: 32
+	Max num tasks: 128
+	Scheduler: dynamic
+	Local Chunk size: 1
+
+Initial depth: 5
+Number of subproblems found (pool size): 232174
+
+
+### Multicore N-Queens - dynamic ###
+	Problem size (N): 19
+	Cutoff depth: 5
+	Initial number of prefixes: 232174
+
+	Initial tree size: 258274
+	Parallel tree size: 228485522213
+	Final tree size: 228485780487
+
+	Number of solutions found: 4968057848
+
+
+Elapsed time (s): 71.056
+	Performance: 3215575393.885 (nodes/s)
+	Performance: 34958771.914 (solutions/s)
+
+
+--- N-QUEENS - Bitset-based data structure --- 
+	 Size: 19
+--- N-Queens mcore search --- 
+
+
+N-Queens for size: 19
+
+CHPL Task layer: qthreads
+	Num created tasks: 32
+	Max num tasks: 128
+	Scheduler: dynamic
+	Local Chunk size: 1
+
+Initial depth: 5
+Number of subproblems found (pool size): 232174
+
+
+### Multicore N-Queens - dynamic ###
+	Problem size (N): 19
+	Cutoff depth: 5
+	Initial number of prefixes: 232174
+
+	Initial tree size: 258274
+	Parallel tree size: 228485522213
+	Final tree size: 228485780487
+
+	Number of solutions found: 4968057848
+
+
+Elapsed time (s): 71.456
+	Performance: 3197578204.888 (nodes/s)
+	Performance: 34763111.870 (solutions/s)
+
+
+--- N-QUEENS - Bitset-based data structure --- 
+	 Size: 19
+--- N-Queens mcore search --- 
+
+
+N-Queens for size: 19
+
+CHPL Task layer: qthreads
+	Num created tasks: 32
+	Max num tasks: 128
+	Scheduler: dynamic
+	Local Chunk size: 1
+
+Initial depth: 5
+Number of subproblems found (pool size): 232174
+
+
+### Multicore N-Queens - dynamic ###
+	Problem size (N): 19
+	Cutoff depth: 5
+	Initial number of prefixes: 232174
+
+	Initial tree size: 258274
+	Parallel tree size: 228485522213
+	Final tree size: 228485780487
+
+	Number of solutions found: 4968057848
+
+
+Elapsed time (s): 71.546
+	Performance: 3193565727.296 (nodes/s)
+	Performance: 34719489.416 (solutions/s)
+
+
+--- N-QUEENS - Bitset-based data structure --- 
+	 Size: 19
+--- N-Queens mcore search --- 
+
+
+N-Queens for size: 19
+
+CHPL Task layer: qthreads
+	Num created tasks: 32
+	Max num tasks: 128
+	Scheduler: dynamic
+	Local Chunk size: 1
+
+Initial depth: 5
+Number of subproblems found (pool size): 232174
+
+
+### Multicore N-Queens - dynamic ###
+	Problem size (N): 19
+	Cutoff depth: 5
+	Initial number of prefixes: 232174
+
+	Initial tree size: 258274
+	Parallel tree size: 228485522213
+	Final tree size: 228485780487
+
+	Number of solutions found: 4968057848
+
+
+Elapsed time (s): 71.495
+	Performance: 3195813205.793 (nodes/s)
+	Performance: 34743923.328 (solutions/s)
+
+
+--- N-QUEENS - Bitset-based data structure --- 
+	 Size: 19
+--- N-Queens mcore search --- 
+
+
+N-Queens for size: 19
+
+CHPL Task layer: qthreads
+	Num created tasks: 32
+	Max num tasks: 128
+	Scheduler: dynamic
+	Local Chunk size: 1
+
+Initial depth: 5
+Number of subproblems found (pool size): 232174
+
+
+### Multicore N-Queens - dynamic ###
+	Problem size (N): 19
+	Cutoff depth: 5
+	Initial number of prefixes: 232174
+
+	Initial tree size: 258274
+	Parallel tree size: 228485522213
+	Final tree size: 228485780487
+
+	Number of solutions found: 4968057848
+
+
+Elapsed time (s): 71.290
+	Performance: 3205031655.788 (nodes/s)
+	Performance: 34844143.554 (solutions/s)
+
+
+--- N-QUEENS - Bitset-based data structure --- 
+	 Size: 19
+--- N-Queens mcore search --- 
+
+
+N-Queens for size: 19
+
+CHPL Task layer: qthreads
+	Num created tasks: 32
+	Max num tasks: 128
+	Scheduler: dynamic
+	Local Chunk size: 1
+
+Initial depth: 5
+Number of subproblems found (pool size): 232174
+
+
+### Multicore N-Queens - dynamic ###
+	Problem size (N): 19
+	Cutoff depth: 5
+	Initial number of prefixes: 232174
+
+	Initial tree size: 258274
+	Parallel tree size: 228485522213
+	Final tree size: 228485780487
+
+	Number of solutions found: 4968057848
+
+
+Elapsed time (s): 71.081
+	Performance: 3214460040.326 (nodes/s)
+	Performance: 34946646.125 (solutions/s)
+
+
+--- N-QUEENS - Bitset-based data structure --- 
+	 Size: 19
+--- N-Queens mcore search --- 
+
+
+N-Queens for size: 19
+
+CHPL Task layer: qthreads
+	Num created tasks: 32
+	Max num tasks: 128
+	Scheduler: dynamic
+	Local Chunk size: 1
+
+Initial depth: 5
+Number of subproblems found (pool size): 232174
+
+
+### Multicore N-Queens - dynamic ###
+	Problem size (N): 19
+	Cutoff depth: 5
+	Initial number of prefixes: 232174
+
+	Initial tree size: 258274
+	Parallel tree size: 228485522213
+	Final tree size: 228485780487
+
+	Number of solutions found: 4968057848
+
+
+Elapsed time (s): 71.088
+	Performance: 3214112902.833 (nodes/s)
+	Performance: 34942872.150 (solutions/s)
+
+
+--- N-QUEENS - Bitset-based data structure --- 
+	 Size: 19
+--- N-Queens mcore search --- 
+
+
+N-Queens for size: 19
+
+CHPL Task layer: qthreads
+	Num created tasks: 32
+	Max num tasks: 128
+	Scheduler: dynamic
+	Local Chunk size: 1
+
+Initial depth: 5
+Number of subproblems found (pool size): 232174
+
+
+### Multicore N-Queens - dynamic ###
+	Problem size (N): 19
+	Cutoff depth: 5
+	Initial number of prefixes: 232174
+
+	Initial tree size: 258274
+	Parallel tree size: 228485522213
+	Final tree size: 228485780487
+
+	Number of solutions found: 4968057848
+
+
+Elapsed time (s): 71.449
+	Performance: 3197879975.760 (nodes/s)
+	Performance: 34766392.632 (solutions/s)
 
 ********** Single Socket, with SMT
 
@@ -1069,9 +1069,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 34.707
-	Performance: 6583349424.991 (nodes/s)
-	Performance: 71572201.796 (solutions/s)
+Elapsed time (s): 34.642
+	Performance: 6595635492.714 (nodes/s)
+	Performance: 71705772.242 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -1103,9 +1103,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 34.282
-	Performance: 6664824916.171 (nodes/s)
-	Performance: 72457978.916 (solutions/s)
+Elapsed time (s): 34.373
+	Performance: 6647251812.522 (nodes/s)
+	Performance: 72266929.400 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -1137,9 +1137,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 39.035
-	Performance: 5853415525.192 (nodes/s)
-	Performance: 63636579.212 (solutions/s)
+Elapsed time (s): 38.846
+	Performance: 5881762484.618 (nodes/s)
+	Performance: 63944758.859 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -1171,9 +1171,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 46.693
-	Performance: 4893360726.587 (nodes/s)
-	Performance: 53199151.188 (solutions/s)
+Elapsed time (s): 46.814
+	Performance: 4880746239.851 (nodes/s)
+	Performance: 53062010.269 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -1205,9 +1205,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 48.554
-	Performance: 4705825300.759 (nodes/s)
-	Performance: 51160322.246 (solutions/s)
+Elapsed time (s): 48.907
+	Performance: 4671887070.272 (nodes/s)
+	Performance: 50791355.976 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -1239,9 +1239,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 49.402
-	Performance: 4624989974.928 (nodes/s)
-	Performance: 50281504.812 (solutions/s)
+Elapsed time (s): 48.948
+	Performance: 4667910903.811 (nodes/s)
+	Performance: 50748128.286 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -1273,9 +1273,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 49.665
-	Performance: 4600508191.216 (nodes/s)
-	Performance: 50015346.197 (solutions/s)
+Elapsed time (s): 49.450
+	Performance: 4620528018.411 (nodes/s)
+	Performance: 50232995.758 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -1307,9 +1307,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 49.928
-	Performance: 4576309705.921 (nodes/s)
-	Performance: 49752267.517 (solutions/s)
+Elapsed time (s): 49.775
+	Performance: 4590383443.966 (nodes/s)
+	Performance: 49905272.979 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -1341,9 +1341,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 50.321
-	Performance: 4540540367.608 (nodes/s)
-	Performance: 49363393.992 (solutions/s)
+Elapsed time (s): 49.052
+	Performance: 4658035408.022 (nodes/s)
+	Performance: 50640764.856 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -1375,7 +1375,7 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 49.937
-	Performance: 4575455243.816 (nodes/s)
-	Performance: 49742978.061 (solutions/s)
+Elapsed time (s): 48.421
+	Performance: 4718754741.368 (nodes/s)
+	Performance: 51300887.249 (solutions/s)
 

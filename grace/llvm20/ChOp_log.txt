@@ -8,12 +8,13 @@ mkdir -p ./bin
  ### Building Chapel Queens single-locale CPU... ### 
 
 chpl  -s avoidMirrored=true -M ./modules --fast --no-bounds-checks queens_CPU_single_node.chpl -o  ./bin/queens_mcore.out
-chpl: error while loading shared libraries: libclang-cpp.so.22.1: cannot open shared object file: No such file or directory
-make: *** [Makefile:41: queens_singlelocale_cpu] Error 127
-Setting CHPL_HOME to /home/idhenri/chapel_arm
-Updating PATH to include /home/idhenri/chapel_arm/bin/linux64-aarch64
-                     and /home/idhenri/chapel_arm/util
-Updating MANPATH to include /home/idhenri/chapel_arm/man
+
+ ### Queens-Single Locale -- Compilation done ### 
+#### Number of compilations:  1165 ####
+Setting CHPL_HOME to /home/idhenri/chapel
+Updating PATH to include /home/idhenri/chapel/bin/linux64-aarch64
+                     and /home/idhenri/chapel/util
+Updating MANPATH to include /home/idhenri/chapel/man
 ********** No SMT
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -45,9 +46,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 8.381
-	Performance: 27262297700.506 (nodes/s)
-	Performance: 296387529.580 (solutions/s)
+Elapsed time (s): 8.342
+	Performance: 27390080779.634 (nodes/s)
+	Performance: 297776748.918 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -79,9 +80,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 8.367
-	Performance: 27307244923.942 (nodes/s)
-	Performance: 296876182.322 (solutions/s)
+Elapsed time (s): 8.333
+	Performance: 27418423073.397 (nodes/s)
+	Performance: 298084877.841 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -113,9 +114,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 8.374
-	Performance: 27284184253.264 (nodes/s)
-	Performance: 296625473.622 (solutions/s)
+Elapsed time (s): 8.343
+	Performance: 27387047228.516 (nodes/s)
+	Performance: 297743769.059 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -147,9 +148,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 8.388
-	Performance: 27240673570.491 (nodes/s)
-	Performance: 296152438.520 (solutions/s)
+Elapsed time (s): 8.346
+	Performance: 27378022777.177 (nodes/s)
+	Performance: 297645657.929 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -181,9 +182,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 8.389
-	Performance: 27236075597.151 (nodes/s)
-	Performance: 296102450.732 (solutions/s)
+Elapsed time (s): 8.346
+	Performance: 27378163841.008 (nodes/s)
+	Performance: 297647191.533 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -215,9 +216,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 8.389
-	Performance: 27234767276.887 (nodes/s)
-	Performance: 296088227.066 (solutions/s)
+Elapsed time (s): 8.346
+	Performance: 27378163841.008 (nodes/s)
+	Performance: 297647191.533 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -249,9 +250,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 8.391
-	Performance: 27231401283.662 (nodes/s)
-	Performance: 296051632.997 (solutions/s)
+Elapsed time (s): 8.346
+	Performance: 27377625837.915 (nodes/s)
+	Performance: 297641342.524 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -283,9 +284,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 8.391
-	Performance: 27228753218.138 (nodes/s)
-	Performance: 296022844.022 (solutions/s)
+Elapsed time (s): 8.347
+	Performance: 27372847067.910 (nodes/s)
+	Performance: 297589389.169 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -317,9 +318,9 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 8.392
-	Performance: 27227046527.305 (nodes/s)
-	Performance: 296004289.391 (solutions/s)
+Elapsed time (s): 8.345
+	Performance: 27378839655.343 (nodes/s)
+	Performance: 297654538.783 (solutions/s)
 
 
 --- N-QUEENS - Bitset-based data structure --- 
@@ -351,7 +352,7 @@ Number of subproblems found (pool size): 232174
 	Number of solutions found: 4968057848
 
 
-Elapsed time (s): 8.391
-	Performance: 27230989112.170 (nodes/s)
-	Performance: 296047151.992 (solutions/s)
+Elapsed time (s): 8.348
+	Performance: 27368620706.602 (nodes/s)
+	Performance: 297543441.436 (solutions/s)
 
