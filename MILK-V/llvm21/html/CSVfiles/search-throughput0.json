@@ -1,0 +1,1 @@
+{"labels": ["Date", "startsWith (ASCII)", "endsWith (ASCII)", "find (ASCII)", "rfind (ASCII)", "startsWith (UTF8)", "endsWith (UTF8)", "find (UTF8)", "rfind (UTF8)", "startsWith (bytes)", "endsWith (bytes)", "find (bytes)", "rfind (bytes)"], "data": [["2026-07-24", null, null, null, null, null, null, null, null, null, null, null, null]]}
