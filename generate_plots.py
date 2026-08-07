@@ -61,7 +61,7 @@ benchmark_map = {
     'regexdnaredux-submitted': 'DNA Regex Redux',
     'revcomp3-submitted': 'Reverse Complement (3)',
     'revcomp5-submitted': 'Reverse Complement (5)',
-    'revcomp8-submitted': 'Reverse Complement (8)',
+    'revcomp8-submitted': 'Reverse Complement (9)', # Historical naming discrepancy between Chapel and the CLBG site.
     'spectralnorm2-40000': 'Spectral Norm (V2, Size 40000)',
     'spectralnorm2': 'Spectral Norm (V2, Size 500)',
     'spectralnorm-submitted-40000': 'Spectral Norm (Size 40000)',
