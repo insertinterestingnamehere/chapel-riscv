@@ -1,0 +1,647 @@
+
+Setting CHPL_HOME to /home/enix/chapel-git-llvm-21
+Updating PATH to include /home/enix/chapel-git-llvm-21/bin/linux64-riscv64
+                     and /home/enix/chapel-git-llvm-21/util
+Updating MANPATH to include /home/enix/chapel-git-llvm-21/man
+
+[Removing log file with duplicate name /home/enix/chapel-git-llvm-21/test/Logs/enix.linux64.log]
+[Starting Chapel regression tests - 260809.031502]
+[git branch: 'HEAD' (6b2aa8a6b9c)]
+[starting directory: "/home/enix/chapel-git-llvm-21"]
+[Logs directory: "/home/enix/chapel-git-llvm-21/test/Logs"]
+[log_file: "/home/enix/chapel-git-llvm-21/test/Logs/enix.linux64.log"]
+[CHPL_HOME: /home/enix/chapel-git-llvm-21]
+[host platform: linux64]
+[target platform: linux64]
+[valgrind: OFF]
+[performance tests: ON]
+[compiler performance tests: OFF]
+[number of trials: 10]
+[performance graph generation: ON]
+[performance graph ranges: ON]
+[performance graph data reduction: avg]
+[compiler: "/home/enix/chapel-git-llvm-21/bin/linux64-riscv64/chpl"]
+[compopts: "--fast --cc-warnings"]
+[execopts: ""]
+[launchcmd: ""]
+[comm: "none"]
+[networkAtomics: "none"]
+[localeModel: "flat"]
+[numlocales: "(default)"]
+[max_locales: "(default)"]
+[Saving current git sha to /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison/perfSha.dat]
+Using default date 08/09/26
+Looking for sha...found it: 6b2aa8a6b9c7e5fe44041ab3560af8f9576b0c4b
+[tests: ""]
+[directories: "/home/enix/chapel-git-llvm-21/test/studies/shootout/submitted"]
+[Checking for duplicate performance data filenames]
+[Checking for duplicate .graph files and that all .graph files appear in /home/enix/chapel-git-llvm-21/test/*GRAPHFILES]
+[Warning: studies/shootout/bak/regexdna-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/spectralnorm-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/nbody-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/fasta-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/fannkuchredux-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/binarytrees-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/mandelbrot-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/regexdnaredux-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/spectralnorm-submitted-40000.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/knucleotide-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/revcomp-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/submitted/binarytrees-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/fannkuchredux-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/fasta-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/knucleotide-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/mandelbrot-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/nbody-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/regexdna-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/regexdnaredux-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/revcomp-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/spectralnorm-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/spectralnorm-submitted-40000.graph listed in GRAPHFILES does not exist]
+
+### Chapel Environment ###
+machine info: Linux unmatched 7.1.3 #1-NixOS SMP PREEMPT Sat Jul  4 11:45:09 UTC 2026 riscv64
+CHPL_HOME: /nix/store/gnjiazvvxw32d3g5anmjp32hrw37nqki-chapel-riscv64-unknown-linux-gnu-2.9.0 *
+script location: /nix/store/gnjiazvvxw32d3g5anmjp32hrw37nqki-chapel-riscv64-unknown-linux-gnu-2.9.0/util/chplenv
+CHPL_HOST_PLATFORM: linux64
+CHPL_HOST_COMPILER: llvm *
+  CHPL_HOST_CC: /nix/store/v6ipx56l7zhqyiw760kmgcx3w22242gw-clang-wrapper-21.1.8/bin/clang *
+  CHPL_HOST_CXX: /nix/store/v6ipx56l7zhqyiw760kmgcx3w22242gw-clang-wrapper-21.1.8/bin/clang++ *
+CHPL_HOST_ARCH: riscv64
+CHPL_TARGET_PLATFORM: linux64
+CHPL_TARGET_COMPILER: llvm *
+  CHPL_TARGET_CC: /nix/store/v6ipx56l7zhqyiw760kmgcx3w22242gw-clang-wrapper-21.1.8/bin/clang *
+  CHPL_TARGET_CXX: /nix/store/v6ipx56l7zhqyiw760kmgcx3w22242gw-clang-wrapper-21.1.8/bin/clang++ *
+  CHPL_TARGET_LD: /nix/store/v6ipx56l7zhqyiw760kmgcx3w22242gw-clang-wrapper-21.1.8/bin/clang++
+CHPL_TARGET_ARCH: riscv64 *
+CHPL_TARGET_CPU: sifive-u74 *
+CHPL_LOCALE_MODEL: flat *
+  CHPL_GPU: none
+  CHPL_GPU_SDK_VERSION: none
+  CHPL_GPU_MEM_STRATEGY: array_on_device
+CHPL_COMM: none *
+  CHPL_COMM_SUBSTRATE: none
+  CHPL_GASNET_SEGMENT: none *
+  CHPL_LIBFABRIC: none
+  CHPL_COMM_OFI_OOB: none
+CHPL_TASKS: qthreads *
+CHPL_LAUNCHER: none *
+CHPL_TIMERS: generic
+CHPL_UNWIND: none *
+CHPL_HOST_MEM: mimalloc *
+  CHPL_HOST_JEMALLOC: none
+  CHPL_HOST_MIMALLOC: bundled
+CHPL_TARGET_MEM: mimalloc *
+  CHPL_TARGET_JEMALLOC: none
+  CHPL_TARGET_MIMALLOC: bundled
+CHPL_ATOMICS: cstdlib
+  CHPL_NETWORK_ATOMICS: none *
+CHPL_GMP: bundled *
+CHPL_HWLOC: bundled
+  CHPL_HWLOC_PCI: disable
+CHPL_RE2: bundled *
+CHPL_LLVM: system *
+  CHPL_LLVM_SUPPORT: system *
+  CHPL_LLVM_CONFIG: /nix/store/x1vwli4q6ya44agblbr7hk1gbpsvwm5v-llvm-riscv64-unknown-linux-gnu-21.1.8-dev/bin/llvm-config *
+  CHPL_LLVM_VERSION: 21
+CHPL_AUX_FILESYS: none
+CHPL_LIB_PIC: none
+CHPL_SANITIZE: none
+CHPL_SANITIZE_EXE: none
+##########################
+[Working from directory /home/enix/chapel-git-llvm-21/test/studies/shootout/submitted]
+
+[Working on directory /home/enix/chapel-git-llvm-21/test/studies/shootout/submitted]
+[Starting sub_clean - Sun Aug 09 03:15:09 UTC 2026]
+[pwd: /home/enix/chapel-git-llvm-21/test/studies/shootout/submitted]
+Cleaning directory: .
+Cleaning test: ./pidigits2
+Cleaning test: ./pidigits4
+Cleaning test: ./pidigits5
+
+[Starting /home/enix/chapel-git-llvm-21/util/test/sub_test Sun Aug 09 03:15:09 UTC 2026]
+[Starting subtest - Sun Aug 09 03:15:15 UTC 2026]
+[test: studies/shootout/submitted/pidigits2.chpl]
+[Checking skipif: pidigits2.skipif]
+[Executing compiler /home/enix/chapel-git-llvm-21/bin/linux64-riscv64/chpl --fast --cc-warnings pidigits2.chpl < /dev/null]
+[Elapsed compilation time for "studies/shootout/submitted/pidigits2" - 109.971 seconds]
+[Success compiling studies/shootout/submitted/pidigits2]
+[Executing ./PREEXEC]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits2 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55240 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55241  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.7 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55242  100 tail -n +2
+enix       55243  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits2" - 10.943 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits2-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits2.perfkeys pidigits2.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 10.32
+[Success matching performance keys for studies/shootout/submitted/pidigits2]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits2 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55258 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55259  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.7 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55260  100 tail -n +2
+enix       55261  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits2" - 11.018 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits2-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits2.perfkeys pidigits2.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 10.39
+[Success matching performance keys for studies/shootout/submitted/pidigits2]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits2 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55277 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55278  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.7 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55279  100 tail -n +2
+enix       55280  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits2" - 10.974 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits2-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits2.perfkeys pidigits2.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 10.35
+[Success matching performance keys for studies/shootout/submitted/pidigits2]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits2 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55297 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55298  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.6 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55299  100 tail -n +2
+enix       55300  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits2" - 10.953 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits2-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits2.perfkeys pidigits2.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 10.33
+[Success matching performance keys for studies/shootout/submitted/pidigits2]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits2 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55316 66.6 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55317  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.6 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55318  100 tail -n +2
+enix       55319  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits2" - 10.947 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits2-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits2.perfkeys pidigits2.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 10.32
+[Success matching performance keys for studies/shootout/submitted/pidigits2]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits2 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55335 25.0 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       49507  3.6 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55336  250 ps ax -o user,pid,pcpu,command
+enix       55338  100 sort -r -k 3
+enix       55339  100 head -n 5
+[Elapsed execution time for "studies/shootout/submitted/pidigits2" - 10.918 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits2-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits2.perfkeys pidigits2.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 10.3
+[Success matching performance keys for studies/shootout/submitted/pidigits2]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits2 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55353 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55354  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.6 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55355  100 tail -n +2
+enix       55356  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits2" - 10.935 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits2-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits2.perfkeys pidigits2.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 10.3
+[Success matching performance keys for studies/shootout/submitted/pidigits2]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits2 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55374 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55375  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.6 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55376  100 tail -n +2
+enix       55377  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits2" - 10.952 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits2-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits2.perfkeys pidigits2.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 10.32
+[Success matching performance keys for studies/shootout/submitted/pidigits2]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits2 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55394 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55395  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.6 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55396  100 tail -n +2
+enix       55397  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits2" - 10.954 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits2-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits2.perfkeys pidigits2.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 10.33
+[Success matching performance keys for studies/shootout/submitted/pidigits2]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits2 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55413 66.6 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55414  600 ps ax -o user,pid,pcpu,command
+enix       49507  3.6 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55415  100 tail -n +2
+enix       49428  1.3 /nix/store/p4zyd367y1qb51b1iyrw02gbdzfmjsiq-zellij-unwrapped-riscv64-unknown-linux-gnu-0.44.3/bin/zellij --server /run/user/1000/zellij/contract_version_1/sensible-tambourine
+[Elapsed execution time for "studies/shootout/submitted/pidigits2" - 10.941 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits2-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits2.perfkeys pidigits2.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 10.31
+[Success matching performance keys for studies/shootout/submitted/pidigits2]
+[Elapsed time to compile and execute all versions of "studies/shootout/submitted/pidigits2" - 440.428 seconds]
+[test: studies/shootout/submitted/pidigits4.chpl]
+[Checking skipif: pidigits4.skipif]
+[Executing compiler /home/enix/chapel-git-llvm-21/bin/linux64-riscv64/chpl --fast --cc-warnings pidigits4.chpl < /dev/null]
+[Elapsed compilation time for "studies/shootout/submitted/pidigits4" - 110.282 seconds]
+[Success compiling studies/shootout/submitted/pidigits4]
+[Executing ./PREEXEC]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits4 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55591 50.0 tail -n +2
+enix       55589 25.0 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       49507  3.6 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55590  250 ps ax -o user,pid,pcpu,command
+enix       55592  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits4" - 10.941 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits4-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits4.perfkeys pidigits4.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on any line...
+SUCCESS
+Looking for real...found it: 10.32
+[Success matching performance keys for studies/shootout/submitted/pidigits4]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits4 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55608 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55609  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.5 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55611  100 sort -r -k 3
+enix       55612  100 head -n 5
+[Elapsed execution time for "studies/shootout/submitted/pidigits4" - 10.925 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits4-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits4.perfkeys pidigits4.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on any line...
+SUCCESS
+Looking for real...found it: 10.3
+[Success matching performance keys for studies/shootout/submitted/pidigits4]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits4 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55626 66.6 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55627  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.5 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55629  100 sort -r -k 3
+enix       55630  100 head -n 5
+[Elapsed execution time for "studies/shootout/submitted/pidigits4" - 10.939 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits4-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits4.perfkeys pidigits4.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on any line...
+SUCCESS
+Looking for real...found it: 10.3
+[Success matching performance keys for studies/shootout/submitted/pidigits4]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits4 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55649 50.0 tail -n +2
+enix       55647 50.0 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       49507  3.5 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55648  250 ps ax -o user,pid,pcpu,command
+enix       55651  100 head -n 5
+[Elapsed execution time for "studies/shootout/submitted/pidigits4" - 10.921 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits4-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits4.perfkeys pidigits4.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on any line...
+SUCCESS
+Looking for real...found it: 10.3
+[Success matching performance keys for studies/shootout/submitted/pidigits4]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits4 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55666 66.6 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55667  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.5 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       49428  1.3 /nix/store/p4zyd367y1qb51b1iyrw02gbdzfmjsiq-zellij-unwrapped-riscv64-unknown-linux-gnu-0.44.3/bin/zellij --server /run/user/1000/zellij/contract_version_1/sensible-tambourine
+enix       49453  0.9 /run/current-system/sw/bin/zsh
+[Elapsed execution time for "studies/shootout/submitted/pidigits4" - 10.936 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits4-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits4.perfkeys pidigits4.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on any line...
+SUCCESS
+Looking for real...found it: 10.31
+[Success matching performance keys for studies/shootout/submitted/pidigits4]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits4 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55685 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55686  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.5 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55687  100 tail -n +2
+enix       55689  100 head -n 5
+[Elapsed execution time for "studies/shootout/submitted/pidigits4" - 10.914 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits4-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits4.perfkeys pidigits4.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on any line...
+SUCCESS
+Looking for real...found it: 10.28
+[Success matching performance keys for studies/shootout/submitted/pidigits4]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits4 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55704 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55705  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.5 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       49428  1.3 /nix/store/p4zyd367y1qb51b1iyrw02gbdzfmjsiq-zellij-unwrapped-riscv64-unknown-linux-gnu-0.44.3/bin/zellij --server /run/user/1000/zellij/contract_version_1/sensible-tambourine
+enix       49453  0.9 /run/current-system/sw/bin/zsh
+[Elapsed execution time for "studies/shootout/submitted/pidigits4" - 10.950 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits4-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits4.perfkeys pidigits4.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on any line...
+SUCCESS
+Looking for real...found it: 10.32
+[Success matching performance keys for studies/shootout/submitted/pidigits4]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits4 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55722 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55723  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.5 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55724  100 tail -n +2
+enix       55726  100 head -n 5
+[Elapsed execution time for "studies/shootout/submitted/pidigits4" - 10.940 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits4-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits4.perfkeys pidigits4.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on any line...
+SUCCESS
+Looking for real...found it: 10.3
+[Success matching performance keys for studies/shootout/submitted/pidigits4]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits4 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55742 25.0 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       49507  3.5 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55743  250 ps ax -o user,pid,pcpu,command
+enix       55745  100 sort -r -k 3
+enix       49428  1.3 /nix/store/p4zyd367y1qb51b1iyrw02gbdzfmjsiq-zellij-unwrapped-riscv64-unknown-linux-gnu-0.44.3/bin/zellij --server /run/user/1000/zellij/contract_version_1/sensible-tambourine
+[Elapsed execution time for "studies/shootout/submitted/pidigits4" - 10.933 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits4-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits4.perfkeys pidigits4.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on any line...
+SUCCESS
+Looking for real...found it: 10.3
+[Success matching performance keys for studies/shootout/submitted/pidigits4]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits4 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55762 25.0 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       49507  3.5 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55763  250 ps ax -o user,pid,pcpu,command
+enix       55764  100 tail -n +2
+enix       55765  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits4" - 10.926 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits4-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits4.perfkeys pidigits4.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on any line...
+SUCCESS
+Looking for real...found it: 10.3
+[Success matching performance keys for studies/shootout/submitted/pidigits4]
+[Elapsed time to compile and execute all versions of "studies/shootout/submitted/pidigits4" - 224.300 seconds]
+[test: studies/shootout/submitted/pidigits5.chpl]
+[Checking skipif: pidigits5.skipif]
+[Executing compiler /home/enix/chapel-git-llvm-21/bin/linux64-riscv64/chpl --fast --cc-warnings pidigits5.chpl < /dev/null]
+[Elapsed compilation time for "studies/shootout/submitted/pidigits5" - 110.886 seconds]
+[Success compiling studies/shootout/submitted/pidigits5]
+[Executing ./PREEXEC]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits5 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55935 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55936  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.4 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55939  100 head -n 5
+enix       49428  1.2 /nix/store/p4zyd367y1qb51b1iyrw02gbdzfmjsiq-zellij-unwrapped-riscv64-unknown-linux-gnu-0.44.3/bin/zellij --server /run/user/1000/zellij/contract_version_1/sensible-tambourine
+[Elapsed execution time for "studies/shootout/submitted/pidigits5" - 7.727 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits5-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits5.perfkeys pidigits5.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 7.1
+[Success matching performance keys for studies/shootout/submitted/pidigits5]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits5 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55953 66.6 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55954  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.4 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55956  100 sort -r -k 3
+enix       55957  100 head -n 5
+[Elapsed execution time for "studies/shootout/submitted/pidigits5" - 7.890 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits5-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits5.perfkeys pidigits5.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 7.259
+[Success matching performance keys for studies/shootout/submitted/pidigits5]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits5 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55971 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55972  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.4 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55974  100 sort -r -k 3
+enix       55975  100 head -n 5
+[Elapsed execution time for "studies/shootout/submitted/pidigits5" - 7.817 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits5-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits5.perfkeys pidigits5.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 7.203
+[Success matching performance keys for studies/shootout/submitted/pidigits5]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits5 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       55988 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       55989  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.4 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       55990  100 tail -n +2
+enix       55991  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits5" - 7.743 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits5-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits5.perfkeys pidigits5.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 7.111
+[Success matching performance keys for studies/shootout/submitted/pidigits5]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits5 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       56005 66.6 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       56006  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.4 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       56007  100 tail -n +2
+enix       56008  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits5" - 7.729 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits5-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits5.perfkeys pidigits5.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 7.105
+[Success matching performance keys for studies/shootout/submitted/pidigits5]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits5 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       56023 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       56024  600 ps ax -o user,pid,pcpu,command
+enix       49507  3.4 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       49428  1.2 /nix/store/p4zyd367y1qb51b1iyrw02gbdzfmjsiq-zellij-unwrapped-riscv64-unknown-linux-gnu-0.44.3/bin/zellij --server /run/user/1000/zellij/contract_version_1/sensible-tambourine
+enix       49453  0.8 /run/current-system/sw/bin/zsh
+[Elapsed execution time for "studies/shootout/submitted/pidigits5" - 7.837 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits5-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits5.perfkeys pidigits5.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 7.212
+[Success matching performance keys for studies/shootout/submitted/pidigits5]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits5 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       56042 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       56043  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.4 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       56044  100 tail -n +2
+enix       49428  1.2 /nix/store/p4zyd367y1qb51b1iyrw02gbdzfmjsiq-zellij-unwrapped-riscv64-unknown-linux-gnu-0.44.3/bin/zellij --server /run/user/1000/zellij/contract_version_1/sensible-tambourine
+[Elapsed execution time for "studies/shootout/submitted/pidigits5" - 7.980 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits5-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits5.perfkeys pidigits5.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 7.363
+[Success matching performance keys for studies/shootout/submitted/pidigits5]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits5 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       56060 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       56061  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.4 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       56062  100 tail -n +2
+enix       49428  1.2 /nix/store/p4zyd367y1qb51b1iyrw02gbdzfmjsiq-zellij-unwrapped-riscv64-unknown-linux-gnu-0.44.3/bin/zellij --server /run/user/1000/zellij/contract_version_1/sensible-tambourine
+[Elapsed execution time for "studies/shootout/submitted/pidigits5" - 7.757 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits5-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits5.perfkeys pidigits5.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 7.113
+[Success matching performance keys for studies/shootout/submitted/pidigits5]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits5 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       56078 33.3 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       56079  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.4 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       56080  100 tail -n +2
+enix       56081  100 sort -r -k 3
+[Elapsed execution time for "studies/shootout/submitted/pidigits5" - 7.822 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits5-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits5.perfkeys pidigits5.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 7.194
+[Success matching performance keys for studies/shootout/submitted/pidigits5]
+[Executing program /home/enix/chapel-git-llvm-21/util/test/timers/highPrecisionTimer ./pidigits5 --n=10000 < /dev/null]
+[Reporting processes with top 5 highest cpu usages]
+USER         PID %CPU COMMAND
+enix       56096 66.6 /nix/store/nwj7mvjgsn18mc15vyaiakpzmkw054cq-bash-riscv64-unknown-linux-gnu-5.3p9/bin/sh -c ps ax -o user,pid,pcpu,command | tail -n +2 | sort -r -k 3 | head -n 5
+enix       56097  500 ps ax -o user,pid,pcpu,command
+enix       49507  3.4 /nix/store/39dk9pilipa1sc77l7pkixc738wklsdh-gitstatus-riscv64-unknown-linux-gnu-1.5.5/bin/gitstatusd -G v1.5.5 -s -1 -u -1 -d -1 -c -1 -m -1 -v FATAL -t 8
+enix       56099  100 sort -r -k 3
+enix       49428  1.2 /nix/store/p4zyd367y1qb51b1iyrw02gbdzfmjsiq-zellij-unwrapped-riscv64-unknown-linux-gnu-0.44.3/bin/zellij --server /run/user/1000/zellij/contract_version_1/sensible-tambourine
+[Elapsed execution time for "studies/shootout/submitted/pidigits5" - 7.830 seconds]
+[Executing /home/enix/chapel-git-llvm-21/util/test/computePerfStats pidigits5-submitted /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison pidigits5.perfkeys pidigits5.exec.out.tmp False 08/09/26]
+Using set date 08/09/26
+Checking for /5525637567\t:10000/ on line -4...
+SUCCESS
+Looking for real...found it: 7.209
+[Success matching performance keys for studies/shootout/submitted/pidigits5]
+[Elapsed time to compile and execute all versions of "studies/shootout/submitted/pidigits5" - 193.616 seconds]
+[Finished subtest "studies/shootout/submitted" - 884.096 seconds]
+
+[Working from directory /home/enix/chapel-git-llvm-21/test/studies/shootout/submitted]
+
+[Working on directory /home/enix/chapel-git-llvm-21/test/studies/shootout/submitted]
+[Executing genGraphs for /home/enix/chapel-git-llvm-21/test/GRAPHFILES in /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison/html]
+Running genGraphs with /home/enix/chapel-git-llvm-21/util/test/genGraphs.py  -p /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison -o /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison/html -t /home/enix/chapel-git-llvm-21/test -n unmatched   -r avg -g /home/enix/chapel-git-llvm-21/test/GRAPHFILES
+WARNING: Could not read graph description from ./studies/shootout/submitted/binarytrees-submitted.graph.  Ignoring.
+WARNING: Could not read graph description from ./studies/shootout/submitted/fannkuchredux-submitted.graph.  Ignoring.
+WARNING: Could not read graph description from ./studies/shootout/submitted/fasta-submitted.graph.  Ignoring.
+WARNING: Could not read graph description from ./studies/shootout/submitted/knucleotide-submitted.graph.  Ignoring.
+WARNING: Could not read graph description from ./studies/shootout/submitted/mandelbrot-submitted.graph.  Ignoring.
+WARNING: Could not read graph description from ./studies/shootout/submitted/nbody-submitted.graph.  Ignoring.
+WARNING: Could not read graph description from ./studies/shootout/submitted/regexdna-submitted.graph.  Ignoring.
+WARNING: Could not read graph description from ./studies/shootout/submitted/regexdnaredux-submitted.graph.  Ignoring.
+WARNING: Could not read graph description from ./studies/shootout/submitted/revcomp-submitted.graph.  Ignoring.
+WARNING: Could not read graph description from ./studies/shootout/submitted/spectralnorm-submitted.graph.  Ignoring.
+WARNING: Could not read graph description from ./studies/shootout/submitted/spectralnorm-submitted-40000.graph.  Ignoring.
+WARNING: Invalid graph file key file in /home/enix/chapel-git-llvm-21/test/patterns/primality/prime.graph
+WARNING: Invalid graph file key file in /home/enix/chapel-git-llvm-21/test/io/vass/time-write.graph
+Read 201 graph files in 37 suites
+Created SUCCESS file
+[Success generating graphs from /home/enix/chapel-git-llvm-21/test/GRAPHFILES in /home/enix/chapel-git-llvm-21/test/perfdat/clbg_comparison/html]
+[Done with tests - 260809.033003]
+[Log file: /home/enix/chapel-git-llvm-21/test/Logs/enix.linux64.log ]
+
+[Test Summary - 260809.033003]
+[Warning: studies/shootout/bak/regexdna-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/spectralnorm-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/nbody-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/fasta-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/fannkuchredux-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/binarytrees-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/mandelbrot-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/regexdnaredux-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/spectralnorm-submitted-40000.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/knucleotide-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/bak/revcomp-submitted.graph is missing from GRAPHFILES]
+[Warning: studies/shootout/submitted/binarytrees-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/fannkuchredux-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/fasta-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/knucleotide-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/mandelbrot-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/nbody-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/regexdna-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/regexdnaredux-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/revcomp-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/spectralnorm-submitted.graph listed in GRAPHFILES does not exist]
+[Warning: studies/shootout/submitted/spectralnorm-submitted-40000.graph listed in GRAPHFILES does not exist]
+[Summary: #Successes = 30 | #Failures = 0 | #Futures = 0 | #Warnings = 22 ]
+[Summary: #Passing Suppressions = 0 | #Passing Futures = 0 ]
+[END]
+
