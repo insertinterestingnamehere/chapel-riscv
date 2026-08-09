@@ -56,6 +56,7 @@
         CHPL_TARGET_MEM = "mimalloc";
         CHPL_TARGET_ARCH = "riscv64";
         CHPL_TARGET_CPU = "sifive-u74";
+        CHPL_GMP = "bundled";
       };
 
       chapel-overlay = final: prev: {

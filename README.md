@@ -1,2 +1,1 @@
-# chapel-riscv
-Runs on the MILK-V hardware
+# Benchmarking the Chapel-Qthreads Runtime Stack Across Emerging RISC-V High-Performance Architectures

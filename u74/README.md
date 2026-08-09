@@ -22,7 +22,7 @@ There is an existing project to create a Nix expression to compile Chapel -
 [nix-chapel](https://github.com/twesterhout/nix-chapel). That project does not
 support cross-compiling, however. So, the necessary support was added in a fork
 - https://github.com/DaGenix/nix-chapel, specifically commit
-c4a68ba9239ab2bc35b976862093af54294dd159. For ease of use, the necessary files
+e78454ae14d4b8fd0e9f0610c4a43485809d6ed5. For ease of use, the necessary files
 have been copied into the "nix/" subdirectory.
 
 Some changes had to be made to the Chapel repository in order to get the tests
@@ -59,9 +59,9 @@ Chapel commit ef6f51e04354ff39c8fe07f87e708454057104d0. The changes are:
    readlink result
    ```
 
-   For LLVM 21, this should produce the value: `/nix/store/kyj3x68nd6zcdm5i1i6fzxbc8z5601l0-chapel-riscv64-unknown-linux-gnu-2.9.0/`.
+   For LLVM 21, this should produce the value: `/nix/store/gnjiazvvxw32d3g5anmjp32hrw37nqki-chapel-riscv64-unknown-linux-gnu-2.9.0`.
 
-   For LLVM 22, it should be: `/nix/store/bqch2f566kxv1v4sv6v532g6h88b8mn7-chapel-riscv64-unknown-linux-gnu-2.9.0`.
+   For LLVM 22, it should be: `/nix/store/542ny0v883m33knp26gilvkr1xpn7wh9-chapel-riscv64-unknown-linux-gnu-2.9.0`.
 
 3. Copy chapel and its dependencies to the HiFive Unmatched machine:
 
@@ -84,16 +84,16 @@ Chapel commit ef6f51e04354ff39c8fe07f87e708454057104d0. The changes are:
 
    ```
    mkdir -p bin/linux64-riscv64/
-   ln -sf /nix/store/kyj3x68nd6zcdm5i1i6fzxbc8z5601l0-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/chpl bin/linux64-riscv64/chpl
-   ln -sf /nix/store/kyj3x68nd6zcdm5i1i6fzxbc8z5601l0-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/printchplenv util/printchplenv
+   ln -sf /nix/store/gnjiazvvxw32d3g5anmjp32hrw37nqki-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/chpl bin/linux64-riscv64/chpl
+   ln -sf /nix/store/gnjiazvvxw32d3g5anmjp32hrw37nqki-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/printchplenv util/printchplenv
    ```
 
    or
 
    ```
    mkdir -p bin/linux64-riscv64/
-   ln -sf /nix/store/bqch2f566kxv1v4sv6v532g6h88b8mn7-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/chpl bin/linux64-riscv64/chpl
-   ln -sf /nix/store/bqch2f566kxv1v4sv6v532g6h88b8mn7-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/printchplenv util/printchplenv
+   ln -sf /nix/store/542ny0v883m33knp26gilvkr1xpn7wh9-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/chpl bin/linux64-riscv64/chpl
+   ln -sf /nix/store/542ny0v883m33knp26gilvkr1xpn7wh9-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/printchplenv util/printchplenv
    ```
 
    depending on LLVM version.
@@ -120,13 +120,13 @@ Chapel commit ef6f51e04354ff39c8fe07f87e708454057104d0. The changes are:
    For LLVM 21:
 
    ```
-   export PATH=/nix/store/kyj3x68nd6zcdm5i1i6fzxbc8z5601l0-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/:"$PATH"
+   export PATH=/nix/store/gnjiazvvxw32d3g5anmjp32hrw37nqki-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/:"$PATH"
    ```
 
    or, for LLVM 22:
 
    ```
-   export PATH=/nix/store/bqch2f566kxv1v4sv6v532g6h88b8mn7-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/:"$PATH"
+   export PATH=/nix/store/542ny0v883m33knp26gilvkr1xpn7wh9-chapel-riscv64-unknown-linux-gnu-2.9.0/bin/:"$PATH"
    ```
 
 5. Run the test:

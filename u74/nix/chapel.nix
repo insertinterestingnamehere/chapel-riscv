@@ -206,6 +206,12 @@ chplStdenv.mkDerivation rec {
     # HACK ALERT
     substituteInPlace runtime/etc/Makefile.include \
       --replace-fail '$(CXX)' ${buildPackages.stdenv.cc}/bin/c++
+
+  '' + lib.optionalString (stdenv.buildPlatform != stdenv.hostPlatform) ''
+    substituteInPlace third-party/gmp/Makefile \
+      --replace-fail '$(CHPL_MAKE_HOST_CC)' ${buildPackages.stdenv.cc}/bin/cc \
+      --replace-fail 'CHPL_GMP_CFG_OPTIONS += $(CHPL_GMP_MORE_CFG_OPTIONS)' 'CHPL_GMP_CFG_OPTIONS += $(CHPL_GMP_MORE_CFG_OPTIONS) --host=${targetTriple}' \
+      --replace-fail 'GMP_CROSS_COMPILED=no' 'GMP_CROSS_COMPILED=yes'
   '';
 
   configurePhase = ''
